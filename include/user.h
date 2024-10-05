@@ -14,4 +14,11 @@ typedef struct {
     Data dataUsuario;
 } User;
 
+typedef struct {
+    User user;
+    struct no *proximo;
+} UserNode;
+
+
+
 #endif //USER_H
