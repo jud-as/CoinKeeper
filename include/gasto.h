@@ -15,4 +15,11 @@ typedef struct {
     Data dataGasto;
 } Gasto;
 
+typedef struct {
+    Gasto gasto;
+    struct no *proximo;
+} GastoNode;
+
+extern int idGasto; // Declaração de uma variável global
+
 #endif //GASTO_H
