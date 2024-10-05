@@ -6,8 +6,6 @@
 #define GASTO_H
 #include "data.h"
 
-
-
 typedef struct {
     int id;
     char descricao[50];

@@ -19,6 +19,6 @@ typedef struct {
     struct no *proximo;
 } UserNode;
 
-
+extern int idUser; // Declaração de uma variável global
 
 #endif //USER_H
