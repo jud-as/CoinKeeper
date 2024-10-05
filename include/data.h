@@ -18,6 +18,4 @@ inline void dataToString(Data data) {
     printf("\nAno: %d", data.ano);
 
 }
-
-
 #endif //DATA_H

@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "../include/gasto.h"
 
 int idUser = 1;
 

@@ -1,8 +1,11 @@
 # ninja log v6
 4	188	7497906827379175	CMakeFiles/CoinKeeper.dir/main.c.obj	756e578c4b2380c5
-189	564	7497906829234747	CoinKeeper.exe	7b6a066485159516
-66	955	7498462819268831	CMakeFiles/CoinKeeper.dir/scr/user.c.obj	464be255048ce6cc
-61	956	7498462819218978	CMakeFiles/CoinKeeper.dir/scr/gasto.c.obj	c61aa97b3b20a294
-11	1000	7498462818710779	CMakeFiles/CoinKeeper.dir/scr/main.c.obj	fb5a850ed3f01e8c
-3	165	7498463314627766	CMakeFiles/CoinKeeper.dir/scr/main.c.obj	fb5a850ed3f01e8c
 165	533	7498463316246145	CoinKeeper.exe	ebc8a7f9fe90541e
+12	435	7498493285316344	CMakeFiles/CoinKeeper.dir/scr/main.c.obj	fb5a850ed3f01e8c
+25	427	7498493285446229	CMakeFiles/CoinKeeper.dir/scr/user.c.obj	464be255048ce6cc
+19	424	7498493285386382	CMakeFiles/CoinKeeper.dir/scr/gasto.c.obj	c61aa97b3b20a294
+43	428	7498493285626217	CMakeFiles/CoinKeeper.dir/scr/data.c.obj	e43f2b4908b7028d
+4	182	7498496162115133	CMakeFiles/CoinKeeper.dir/scr/gasto.c.obj	c61aa97b3b20a294
+10	189	7498496162174804	CMakeFiles/CoinKeeper.dir/scr/user.c.obj	464be255048ce6cc
+4	715	7498497534114719	CMakeFiles/CoinKeeper.dir/scr/user.c.obj	464be255048ce6cc
+2	517	7498502902724507	CMakeFiles/CoinKeeper.dir/scr/main.c.obj	fb5a850ed3f01e8c

@@ -5,8 +5,6 @@
 #ifndef USER_H
 #define USER_H
 #include "data.h"
-#include <stdio.h>
-
 
 typedef struct {
     int id;
@@ -29,8 +27,6 @@ inline void userToString(User user) {
     printf("\nData de registro: ");
     dataToString(user.dataUsuario);
 }
-
-
 
 
 extern int idUser; // Declaração de uma variável global
