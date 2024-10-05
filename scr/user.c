@@ -6,8 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// Metodo para cadastrar um novo usuário
-
+// Função para cadastrar um novo usuário na lista de usuários
 void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
     UserNode *novoNode = malloc(sizeof(UserNode)); // Aloca memória para o novo usuário
 

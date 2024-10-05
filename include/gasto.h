@@ -15,4 +15,9 @@ typedef struct {
     Data dataGasto;
 } Gasto;
 
+typedef struct {
+    Gasto gasto;
+    struct no *proximo;
+} GastoNode;
+
 #endif //GASTO_H
