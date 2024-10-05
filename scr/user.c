@@ -24,5 +24,11 @@ void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
         printf("Erro ao alocar memória para o novo usuário.\n");
 }
 
-
+void imprimirUser(UserNode *userNode) {
+    printf("\n\tLista de Usuários: ");
+    while (userNode != NULL) {
+        userToString(userNode->user);
+        userNode = userNode->proximo;
+    }
+    printf("\n\n");
 }
