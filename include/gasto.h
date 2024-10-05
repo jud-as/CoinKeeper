@@ -20,4 +20,6 @@ typedef struct {
     struct no *proximo;
 } GastoNode;
 
+extern int proximoIdGasto; // Declaração de uma variável global
+
 #endif //GASTO_H
