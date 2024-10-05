@@ -23,3 +23,6 @@ void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
     else
         printf("Erro ao alocar memória para o novo usuário.\n");
 }
+
+
+}
