@@ -12,10 +12,4 @@ typedef struct {
     int ano;
 } Data;
 
-inline void dataToString(Data data) {
-    printf("\nDia: %d", data.mes);
-    printf("\nMês: %d", data.dia);
-    printf("\nAno: %d", data.ano);
-
-}
 #endif //DATA_H

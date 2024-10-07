@@ -16,19 +16,15 @@ typedef struct {
 
 typedef struct {
     User user;
-    struct no *proximo;
+    struct UserNode *proximo;
 } UserNode;
 
-inline void userToString(User user) {
-    printf("\nID: %d", user.id);
-    printf("\nNome: %s", user.name);
-    printf("\nE-mail: %s", user.email);
-    printf("\nSenha: %s", user.password);
-    printf("\nData de registro: ");
-    dataToString(user.dataUsuario);
-}
+
 
 
 extern int idUser; // Declaração de uma variável global
+void cadastrarUsuario(UserNode **listaUser, User novoUsuario);
+void imprimirUser(UserNode *userNode);
+void userToString(User user);
 
 #endif //USER_H
