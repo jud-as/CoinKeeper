@@ -6,9 +6,34 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "../include/gasto.h"
 
 int idUser = 1;
+
+
+User* receberInfoUsuario() {
+    User *usuario = malloc(sizeof(User));
+
+    if (usuario) {
+        printf("Nome: ");
+        scanf("%s", usuario->name);
+        printf("E-mail: ");
+        scanf("%s", usuario->email);
+        printf("Senha: ");
+        scanf("%s", usuario->password);
+
+        usuario->dataUsuario.dia = 23;
+        usuario->dataUsuario.mes = 3;
+        usuario->dataUsuario.ano = 2003;
+
+        return usuario;
+    } else {
+        printf("Não foi possivel alocar memória do novo usuário.");
+        return NULL;
+    }
+
+
+
+}
 
 // Função para cadastrar um novo usuário na lista de usuários
 void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
@@ -23,3 +48,25 @@ void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
     else
         printf("Erro ao alocar memória para o novo usuário.\n");
 }
+
+inline void userToString(User user) {
+    printf("\nID: %d", user.id);
+    printf("\nNome: %s", user.name);
+    printf("\nE-mail: %s", user.email);
+    printf("\nSenha: %s", user.password);
+    printf("\nData de registro: ");
+    printf("\nDia: %d", user.dataUsuario.dia);
+    printf("\nMes: %d", user.dataUsuario.mes);
+    printf("\nAno: %d", user.dataUsuario.ano);
+}
+
+void imprimirUser(UserNode *listaUsuarios) {
+    printf("\n\tLista de Usuários: ");
+    while (listaUsuarios != NULL) {
+        userToString(listaUsuarios->user);
+        listaUsuarios = listaUsuarios->proximo;
+        printf("\n\n");
+    }
+
+}
+
