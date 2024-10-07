@@ -26,5 +26,6 @@ extern int idUser; // Declaração de uma variável global
 void cadastrarUsuario(UserNode **listaUser, User novoUsuario);
 void imprimirUser(UserNode *userNode);
 void userToString(User user);
+User* receberInfoUsuario();
 
 #endif //USER_H

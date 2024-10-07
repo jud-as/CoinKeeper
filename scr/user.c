@@ -9,20 +9,31 @@
 
 int idUser = 1;
 
-/*
-User cadastro() {
 
-    User usuario;
-    printf("\nNome: ");
-    fgets(usuario.name, 49, &usuario);
-    printf("\nE-mail: ");
-    fgets(usuario.email, 49, &usuario);
-    printf("\nSenha: ");
-    fgets(usuario.password, 49, &usuario);
+User* receberInfoUsuario() {
+    User *usuario = malloc(sizeof(User));
 
-    return usuario;
+    if (usuario) {
+        printf("Nome: ");
+        scanf("%s", usuario->name);
+        printf("E-mail: ");
+        scanf("%s", usuario->email);
+        printf("Senha: ");
+        scanf("%s", usuario->password);
+
+        usuario->dataUsuario.dia = 23;
+        usuario->dataUsuario.mes = 3;
+        usuario->dataUsuario.ano = 2003;
+
+        return usuario;
+    } else {
+        printf("Não foi possivel alocar memória do novo usuário.");
+        return NULL;
+    }
+
+
+
 }
-*/
 
 // Função para cadastrar um novo usuário na lista de usuários
 void cadastrarUsuario(UserNode **listaUser, User novoUsuario) {
