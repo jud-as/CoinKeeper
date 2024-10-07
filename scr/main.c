@@ -7,18 +7,18 @@
 int main() {
 
     int opcao;
-    UserNode *lista = NULL;
+    UserNode *listaUsuarios = NULL;
 
     do {
         printf("\n0 - Sair\n1 - Cadastrar Usuário\n2 - Imprimir Usuários");
-        printf("\nEscolha: ");
-        scanf("\n\n%d", &opcao);
+        printf("\n\nEscolha: ");
+        scanf("\n%d", &opcao);
         switch (opcao) {
             case 1:
-                cadastrarUsuario(&lista, *receberInfoUsuario());
+                cadastrarUsuario(&listaUsuarios, *receberInfoUsuario());
                 break;
             case 2:
-                imprimirUser(lista);
+                imprimirUser(listaUsuarios);
                 break;
 
             default:

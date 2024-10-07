@@ -20,8 +20,6 @@ typedef struct {
 } UserNode;
 
 
-
-
 extern int idUser; // Declaração de uma variável global
 void cadastrarUsuario(UserNode **listaUser, User novoUsuario);
 void imprimirUser(UserNode *userNode);

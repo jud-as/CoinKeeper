@@ -14,7 +14,7 @@ User* receberInfoUsuario() {
     User *usuario = malloc(sizeof(User));
 
     if (usuario) {
-        printf("Nome: ");
+        printf("\nNome: ");
         scanf("%s", usuario->name);
         printf("E-mail: ");
         scanf("%s", usuario->email);
